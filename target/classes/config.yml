@@ -1,0 +1,6 @@
+percent: 5
+min-balance: 10000
+timesPerDay: 1 # you can do 0.5 for every 2 days
+decimals: false # false = floor
+time:
+  lastExecution: 0
