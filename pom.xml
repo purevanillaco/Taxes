@@ -27,20 +27,24 @@
             <id>papermc</id>
             <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
+        <repository>
+            <id>essentials-releases</id>
+            <url>https://repo.essentialsx.net/releases/</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18.1-R0.1-SNAPSHOT</version>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- if you get build errors, execute ``mvn install:install-file -Dfile=./lib/TNE-0.1.1.16.jar -DgroupId=net.tnemc -DartifactId=TNE -Dversion=0.1.1.16 -Dpackaging=jar -DgeneratePom=true`` first -->
         <dependency>
-            <groupId>net.tnemc</groupId>
-            <artifactId>TNE</artifactId>
-            <version>0.1.1.16</version>
+            <groupId>net.essentialsx</groupId>
+            <artifactId>EssentialsX</artifactId>
+            <version>2.20.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

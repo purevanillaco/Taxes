@@ -1,6 +1,8 @@
-percent: 5
-min-balance: 10000
+percent: 10
+min-balance: 20000
 timesPerDay: 1 # you can do 0.5 for every 2 days
 decimals: false # false = floor
-time:
-  lastExecution: 0
+format:
+  entry: "<dark_gray>▸</dark_gray> <gray><player>:</gray> <light_purple><value> ▲</light_purple>"
+  economy_header: "<newline><light_purple>•</light_purple> <gray>Top players by balance</gray>"
+  points_header: "<newline><light_purple>•</light_purple> <gray>Top players by income</gray>"
