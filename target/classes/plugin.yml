@@ -7,4 +7,5 @@ depend:
   - Essentials
 commands:
   balancetop:
+    aliases: [baltop]
     description: shows total points and balance top

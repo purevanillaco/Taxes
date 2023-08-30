@@ -1,3 +1,6 @@
-co\purevanilla\mcplugins\taxes\API$1.class
-co\purevanilla\mcplugins\taxes\Taxes.class
-co\purevanilla\mcplugins\taxes\API.class
+co/purevanilla/mcplugins/taxes/API$1.class
+co/purevanilla/mcplugins/taxes/Taxes.class
+co/purevanilla/mcplugins/taxes/API.class
+co/purevanilla/mcplugins/taxes/Listener.class
+co/purevanilla/mcplugins/taxes/API$2.class
+co/purevanilla/mcplugins/taxes/CMD.class

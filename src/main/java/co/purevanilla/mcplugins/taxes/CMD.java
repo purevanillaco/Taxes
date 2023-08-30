@@ -19,11 +19,13 @@ public class CMD implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if(commandSender instanceof Player){
-            try {
-                this.api.showTop((Player) commandSender);
-            } catch (ExecutionException | InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            this.api.taxes.getServer().getScheduler().runTaskAsynchronously(this.api.taxes, () -> {
+                try {
+                    this.api.showTop((Player) commandSender);
+                } catch (ExecutionException | InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            });
         }
         return true;
     }

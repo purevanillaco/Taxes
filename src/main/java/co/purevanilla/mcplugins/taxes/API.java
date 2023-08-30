@@ -62,6 +62,7 @@ public class API {
         HashMap<String, Double> top = new HashMap<>();
 
         // Iterate through the keys in the "points" configuration section
+        this.taxes.getLogger().info("computing top");
         for (String key : Objects.requireNonNull(this.data.getConfigurationSection("points")).getKeys(false)) {
             Double value = this.data.getDouble("points." + key);
 
@@ -82,6 +83,8 @@ public class API {
             }
         }
 
+
+        this.taxes.getLogger().info("sorting top");
         List<Map.Entry<String,Double>> sortedEntries = new ArrayList<Map.Entry<String,Double>>(top.entrySet());
         sortedEntries.sort(new Comparator<>() {
             @Override
@@ -90,13 +93,13 @@ public class API {
             }
         });
 
-
+        this.taxes.getLogger().info("getting balance top");
         BalanceTop balanceTop = this.essentials.getBalanceTop();
-        balanceTop.calculateBalanceTopMapAsync().get();
+        if(!balanceTop.isCacheLocked()) balanceTop.calculateBalanceTopMapAsync().join();
         Map<UUID, BalanceTop.Entry> balanceTopCache = balanceTop.getBalanceTopCache();
         MiniMessage formatter = MiniMessage.miniMessage();
-
         player.sendMessage(formatter.deserialize(Objects.requireNonNull(this.taxes.getConfig().getString("format.economy_header"))));
+
         int i = 0;
         for (BalanceTop.Entry btopEntry:balanceTopCache.values()) {
             player.sendMessage(formatter.deserialize(
