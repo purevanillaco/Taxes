@@ -46,6 +46,13 @@
             <version>2.20.1</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>co.purevanilla.mcplugins</groupId>
+            <artifactId>gemmy</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>/home/quique/Documentos/purevanilla/Taxes/src/lib/Gemmy.jar</systemPath>
+        </dependency>
     </dependencies>
 
 

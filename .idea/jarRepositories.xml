@@ -47,14 +47,19 @@
       <option name="url" value="https://repo.essentialsx.net/releases/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="my-local-repo" />
-      <option name="name" value="my-local-repo" />
+      <option name="id" value="tnemc" />
+      <option name="name" value="tnemc" />
       <option name="url" value="file://$PROJECT_DIR$/TNE-Bukkit/TNE" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="github" />
       <option name="name" value="github" />
       <option name="url" value="https://maven.pkg.github.com/ashishchopra/github_package_registry" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="my-local-repo" />
+      <option name="name" value="my-local-repo" />
+      <option name="url" value="file://$PROJECT_DIR$/TNE-Bukkit/TNE" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="jboss.community" />
@@ -65,11 +70,6 @@
       <option name="id" value="jcenter" />
       <option name="name" value="jcenter" />
       <option name="url" value="https://jcenter.bintray.com" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="tnemc" />
-      <option name="name" value="tnemc" />
-      <option name="url" value="file://$PROJECT_DIR$/TNE-Bukkit/TNE" />
     </remote-repository>
   </component>
 </project>
