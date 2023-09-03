@@ -5,6 +5,7 @@ author: quiquelhappy
 api-version: 1.18
 depend:
   - Essentials
+  - Gemmy
 commands:
   balancetop:
     aliases: [baltop]
